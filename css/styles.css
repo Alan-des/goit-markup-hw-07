@@ -776,7 +776,8 @@ color: var(--accent-color);
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 24px;
   padding-top: 96px;
 }
@@ -790,8 +791,7 @@ color: var(--accent-color);
 
 .list-item {
   background-color: var(--color-text-button);
-  width: 360px;
-  margin-right: 24px;
+  width: 100%;
   margin-bottom: 48px;
   position: relative;
 
@@ -1294,6 +1294,11 @@ color: var(--accent-color);
     display: none;
   }
 
+  .button-mod-close{
+    width: 24px;
+    height: 24px;
+  }
+
 
 
   .list-contact {
@@ -1348,129 +1353,149 @@ color: var(--accent-color);
   }
 
 
+  .filter-list{
+    justify-content: center;
+    
+  }
+
+  .list-item:not(:last-child){
+    margin-right: 24px;
+  }
+  .list-item{
+    width: calc((100% - 48px) / 2);
+
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1158px;
+@media screen and (min-width: 1200px) {.container {
+  width: 1158px;
 
-  }
+}
 
+.auth-nav{
+  display: flex;
 
+}
 
-  .team-list {
-    gap: 24px;
-  }
-
-  .customers-list {
-    flex-wrap: nowrap;
-  }
-
-  .customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  .doing {
-    display: block;
-  }
-
-  .benefist-item::before {
-    display: block;
-
-  }
-
-  .section-b {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+.item:not(:last-child){
+margin-right: 40px;
+  
+}
 
 
-  .benefist-item {
-    margin-bottom: 0;
-  }
+.team-list {
+  gap: 24px;
+}
 
-  .section {
-    padding-top: 0;
-  }
+.customers-list {
+  flex-wrap: nowrap;
+}
 
-  .team-section {
-    padding-top: 120px;
-  }
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
+.doing {
+  display: block;
+}
 
-  .container-footer {
-    gap: 0;
-  }
+.benefist-item::before {
+  display: block;
 
-  .footer-text {
-    text-align: left;
+}
 
-  }
-
-
-  .footer-logo-d {
-    margin-right: 120px;
-  }
-
-  .soc-link {
-    margin-right: 80px;
-  }
-
-  .label-email {
-    text-align: left;
-  }
-
-  .form-wrap-email {
-    flex-wrap: nowrap;
-  }
-
-  .input-email {
-    width: 264px;
-    margin-right: 24px;
-
-  }
-
-  .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+.section-b {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 
-  .hero-title {
-    font-size: 56px;
-  }
+.benefist-item {
+  margin-bottom: 0;
+}
 
-  .hero-btn {
-    margin-top: 48px;
-  }
+.section {
+  padding-top: 0;
+}
+
+.team-section {
+  padding-top: 120px;
+}
 
 
+.container-footer {
+  gap: 0;
+}
+
+.footer-text {
+  text-align: left;
+
+}
+
+
+.footer-logo-d {
+  margin-right: 120px;
+}
+
+.soc-link {
+  margin-right: 80px;
+}
+
+.label-email {
+  text-align: left;
+}
+
+.form-wrap-email {
+  flex-wrap: nowrap;
+}
+
+.input-email {
+  width: 264px;
+  margin-right: 24px;
+
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.hero-title {
+  font-size: 56px;
+}
+
+.hero-btn {
+  margin-top: 48px;
+}
+
+
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+
+
+  background-image: linear-gradient(to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-1200.jpg);
+
+
+}
+
+@media screen and (min-resolution:2dppx) {
   .hero {
-    padding-top: 188px;
-    padding-bottom: 188px;
-
-
     background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-1200.jpg);
-
+      url(../images/people-office-1200@2x.jpeg);
 
   }
-
-  @media screen and (min-resolution:2dppx) {
-    .hero {
-      background-image: linear-gradient(to right,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/people-office-1200@2x.jpeg);
-
-    }
-  }
-
-
-
-
-
 }
+
+.list-item {
+  width: calc((100% - 72px) / 3);
+}
+  
+}
+  
