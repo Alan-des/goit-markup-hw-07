@@ -38,7 +38,73 @@
             </li>
           </ul>
         </address>
+
+            <button class="menu-open-btn" data-menu-open type="button">
+              <svg class="menu-open-icon" width="32" height="22">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg></button>
       </div>
+
+
+<!-------------------- MENU ----------------------->
+
+  <div class="mob-menu is-hidden " data-menu> 
+     <div>
+       <button class="menu-close-btn" data-menu-close type="button">
+                <svg class="menu-close-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+              </svg></button>
+       <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link active current" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mob-menu-item"><a class="mob-menu-link link" href>Contacts</a></li>
+            </ul>
+           
+     </div>
+          <div> 
+             <ul class="mob-menu-nav list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              
+            </ul>
+
+             <ul class="mob-soc-list list">
+                    <li class="mob-soc-item">
+                      <a class="mob-soc-link link" href>
+                        <svg class="mob-soc-icon" width="24" height="24">
+                          <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mob-soc-item">
+                      <a class="mob-soc-link link" href>
+                        <svg class="mob-soc-icon" width="24" height="24">
+                          <use href="./images/symbol-defs.svg#icon-twitter"></use></svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item">
+                      <a class="mob-soc-link link" href>
+                        <svg class="mob-soc-icon" width="24" height="24">
+                          <use href="./images/symbol-defs.svg#icon-facebook"></use></svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item">
+                      <a class="mob-soc-link link" href>
+                        <svg class="mob-soc-icon" width="24" height="24">
+                          <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg>
+                        </a>
+                    </li>
+                  </ul>
+          </div>
+        </div>
     </header>
     <!-- main -->
     <main>
@@ -51,7 +117,7 @@
           </div>
         </div>
       </section>
-
+      
       <!-- преимущества -->
       <section class="benefits section-b">
         <div class="container">
@@ -96,25 +162,34 @@
           <h2 class="doing-title">What are we doing</h2>
           <ul class="doing-list list">
             <li class="doing-item">
-              <img src="./images/computer.jpg" alt="computer" width="360" height="300">
+              <img 
+              srcset="./images/computer.jpg 1x, ./images/computer2x.jpeg 2x"
+              src="./images/computer.jpg" alt="computer" width="360" height="300">
             </li>
             <li class="doing-item">
-              <img src="./images/appllicution.jpg" alt="appllicution" width="360" height="300">
+              
+              <img 
+              srcset="./images/appllicution.jpg 1x, ./images/appllicution2x.jpeg 2x"
+              src="./images/appllicution.jpg" alt="appllicution" width="360" height="300">
             </li>
             <li class="doing-item">
-              <img src="./images/phone.jpg" alt="phone" width="360" height="300">
+              <img
+              srcset="./images/phone.jpg 1x, ./images/phone2x.jpeg 2x"
+              src="./images/phone.jpg" alt="phone" width="360" height="300">
             </li>
           </ul>
         </div>
       </section>
 
       <!-- team -->
-      <section class="team section">
+      <section class="team section team-section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/img.jpg" alt="employee" width="264" height="260">
+              <img
+              srcset="./images/img.jpg 1x, /images/img2x.jpeg 2x"
+              src="./images/img.jpg" alt="employee" width="264" height="260">
               <div class="team-title-text">
                 <h3 class="team-after-title">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -148,7 +223,9 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img_man.jpg" alt="employee" width="264" height="260">
+              <img
+              srcset="./images/img_man.jpg 1x, ./images/img_man2x.jpeg 2x"
+              src="./images/img_man.jpg" alt="employee" width="264" height="260">
               <div class="team-title-text">
                 <h3 class="team-after-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -182,7 +259,9 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img_women.jpg" alt="employee" width="264" height="260">
+              <img
+              srcset="./images/img_women.jpg 1x, ./images/img_women2x.jpeg 2x"
+              src="./images/img_women.jpg" alt="employee" width="264" height="260">
               <div class="team-title-text">
                 <h3 class="team-after-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -216,7 +295,9 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/man.jpg" alt="employee" width="264" height="260">
+              <img
+              srcset="./images/man.jpg 1x, ./images/man2x.jpeg 2x"
+              src="./images/man.jpg" alt="employee" width="264" height="260">
               <div class="team-title-text">
                 <h3 class="team-after-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -376,7 +457,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-mod-close" data-modal-close>
-          <svg class="mod-close-icon" width="8px" height="8px">
+          <svg class="mod-close-icon" width="24px" height="24px">
           <use href="./images/symbol-defs.svg#icon-close-black"></use>
         </svg>
         </button>
@@ -431,5 +512,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

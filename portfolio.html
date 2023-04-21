@@ -20,10 +20,10 @@
           <a class="logo link" href="./index.html"><span class="logo-color">Web</span>Studio</a>
           <ul class="site-nav list">
             <li class="item">
-              <a class="nav-link link" href="./index.html">Studio</a>
+              <a class="nav-link link active current" href="./index.html">Studio</a>
             </li>
             <li class="item">
-              <a class="nav-link link active current" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="item"><a class="nav-link link" href>Contacts</a></li>
           </ul>
@@ -38,7 +38,73 @@
             </li>
           </ul>
         </address>
+
+            <button class="menu-open-btn" data-menu-open type="button">
+              <svg class="menu-open-icon" width="32" height="22">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg></button>
       </div>
+
+
+<!-------------------- MENU ----------------------->
+
+  <div class="mob-menu is-hidden" data-menu> 
+     <div>
+       <button class="menu-close-btn" data-menu-close type="button">
+                <svg class="menu-close-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+              </svg></button>
+       <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link  " href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link active current" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mob-menu-item"><a class="mob-menu-link link" href>Contacts</a></li>
+            </ul>
+           
+     </div>
+          <div> 
+             <ul class="mob-menu-nav list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              
+            </ul>
+
+             <ul class="mob-soc-list list">
+                    <li class="mob-soc-item">
+                      <a class="mob-soc-link link" href>
+                        <svg class="mob-soc-icon" width="24" height="24">
+                          <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mob-soc-item">
+                      <a class="mob-soc-link link" href>
+                        <svg class="mob-soc-icon" width="24" height="24">
+                          <use href="./images/symbol-defs.svg#icon-twitter"></use></svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item">
+                      <a class="mob-soc-link link" href>
+                        <svg class="mob-soc-icon" width="24" height="24">
+                          <use href="./images/symbol-defs.svg#icon-facebook"></use></svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item">
+                      <a class="mob-soc-link link" href>
+                        <svg class="mob-soc-icon" width="24" height="24">
+                          <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg>
+                        </a>
+                    </li>
+                  </ul>
+          </div>
+        </div>
     </header>
     <!-- main -->
     <main>
@@ -64,7 +130,24 @@
                 <a class="work-link" href>
                   
                  <div class="ovelay-top">
-                    <img src="./images/bankapp.jpg" alt="bank App" width="360" height="300">
+                  <picture>
+                    <source  srcset="./images/bankapp.jpeg 1x,  ./images/bankapp-2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                    >
+
+                    <source  srcset="./images/bankapp-tab.jpeg 1x,  ./images/bankapp-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)"
+                    >
+
+                    <source  srcset="./images/bankapp-mob.jpeg 1x,  ./images/bankapp-mob-2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    >
+
+
+                     <img src="./images/bankapp.jpeg" alt="bank App" width="396" height="280">
+                     
+                  </picture>
+                   
                   <div class="overlay">
                       <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -80,7 +163,24 @@
               </li>
               <li class="list-item">
                 <a class="work-link" href><div class="ovelay-top">
-                    <img src="./images/payment.jpg" alt="payment" width="360" height="300"> 
+
+                  <picture>
+                    <source  srcset="./images/payment.jpeg 1x,  ./images/payment-2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                    >
+
+                    <source  srcset="./images/payment-tab.jpeg 1x,  ./images/payment-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)"
+                    >
+
+                    <source  srcset="./images/payment-mob.jpeg 1x,  ./images/payment-mob-2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    >
+
+                    <img src="./images/payment.jpeg" alt="payment" width="396" height="280">
+                  </picture>
+
+                     
                   <div class="overlay">
                       <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -95,7 +195,26 @@
               </li>
               <li class="list-item">
                 <a class="work-link" href><div class="ovelay-top">
-                    <img src="./images/meditaion.jpg" alt="meditaion" width="360" height="300">
+
+<picture>
+
+  <source  srcset="./images/meditaion.jpeg 1x,  ./images/meditaion-2x.jpeg 2x"
+  media="(min-width: 1200px)"
+  >
+
+  <source  srcset="./images/meditaion-tab.jpeg 1x,  ./images/meditaion-tab-2x.jpeg 2x"
+  media="(min-width: 768px)"
+  >
+
+  <source  srcset="./images/meditaion-mob.jpeg 1x,  ./images/meditaion-mob-2x.jpeg 2x"
+  media="(max-width: 767px)"
+  >
+
+
+  <img src="./images/meditaion.jpeg" alt="meditaion" width="396" height="280">
+</picture>
+
+                    
                   <div class="overlay">
                       <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -110,7 +229,25 @@
               </li>
               <li class="list-item">
                 <a class="work-link" href><div class="ovelay-top">
-                    <img src="./images/taxi.jpg" alt="taxi Service" width="360" height="300"> 
+
+<picture>
+  <source  srcset="./images/taxi.jpeg 1x,  ./images/taxi-2x.jpeg 2x"
+  media="(min-width: 1200px)"
+  >
+
+  <source  srcset="./images/taxi-tab.jpeg 1x,  ./images/taxi-tab-2x.jpeg 2x"
+  media="(min-width: 768px)"
+  >
+
+  <source  srcset="./images/taxi-mob.jpeg 1x,  ./images/taxi-mob-2x.jpeg 2x"
+  media="(max-width: 767px)"
+  >
+
+
+  <img src="./images/taxi.jpg" alt="taxi Service" width="396" height="280"> 
+</picture>
+
+                    
                     <div class="overlay">
                       <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -125,7 +262,24 @@
               </li>
               <li class="list-item">
                 <a class="work-link" href><div class="ovelay-top">
-                    <img src="./images/screen.jpg" alt="screen Illustrations" width="360" height="300">
+
+<picture>
+  <source  srcset="./images/screen.jpeg 1x,  ./images/screen-2x.jpeg 2x"
+  media="(min-width: 1200px)"
+  >
+
+  <source  srcset="./images/screen-tab.jpeg 1x,  ./images/screen-tab-2x.jpeg 2x"
+  media="(min-width: 768px)"
+  >
+
+  <source  srcset="./images/screen-mob.jpeg 1x,  ./images/screen-mob-2x.jpeg 2x"
+  media="(max-width: 767px)"
+  >
+
+   <img src="./images/screen.jpg" alt="screen Illustrations" width="396" height="280">
+</picture>
+
+                   
                     <div class="overlay">
                       <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -140,7 +294,24 @@
               </li>
               <li class="list-item">
                 <a class="work-link" href><div class="ovelay-top">
-                    <img src="./images/onlinecourses.jpg" alt="online courses" width="360" height="300">
+
+                    <picture>
+                      <source  srcset="./images/onlinecourses.jpeg 1x,  ./images/onlinecourses-2x.jpeg 2x"
+                      media="(min-width: 1200px)"
+                      >
+                    
+                      <source  srcset="./images/onlinecourses-tab.jpeg 1x,  ./images/onlinecourses-tab-2x.jpeg 2x"
+                      media="(min-width: 768px)"
+                      >
+                    
+                      <source  srcset="./images/onlinecourses-mob.jpeg 1x,  ./images/onlinecourses-mob-2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      >   
+
+                     <img src="./images/onlinecourses.jpg" alt="online courses" width="396" height="280">
+
+                    </picture>
+
                     <div class="overlay">
                       <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -155,7 +326,24 @@
               </li>
               <li class="list-item">
                 <a class="work-link" href><div class="ovelay-top">
-                    <img src="./images/stories.jpg" alt="Instagram Stories" width="360" height="300">
+
+                  <picture>
+                    <source  srcset="./images/stories.jpeg 1x,  ./images/stories-2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                  
+                    <source  srcset="./images/stories-tab.jpeg 1x,  ./images/stories-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)"
+                    >
+                  
+                    <source  srcset="./images/stories-mob.jpeg 1x,  ./images/stories-mob-2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    >   
+
+
+                    <img src="./images/stories.jpg" alt="Instagram Stories" width="396" height="280">
+                    
+                  </picture>
                  <div class="overlay">
                       <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div> 
@@ -170,7 +358,26 @@
               </li>
               <li class="list-item">
                 <a class="work-link" href><div class="ovelay-top">
-                    <img src="./images/organicfood.jpg" alt="organic food" width="360" height="300">
+
+                  <picture>
+                    <source  srcset="./images/organicfood.jpeg 1x,  ./images/organicfood-2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                  
+                    <source  srcset="./images/organicfood-tab.jpeg 1x,  ./images/organicfood-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)"
+                    >
+                  
+                    <source  srcset="./images/organicfood-mob.jpeg 1x,  ./images/organicfood-mob-2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    >   
+
+ 
+                    <img src="./images/organicfood.jpg" alt="organic food"width="396" height="280">
+              
+                    
+                  </picture>
+                   
                   <div class="overlay">
                       <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div> 
@@ -186,7 +393,25 @@
               <li class="list-item">
                 
                 <a class="work-link" href><div class="ovelay-top">
-                    <img src="./images/freshcoffe.jpg" alt="Fresh Coffee" width="360" height="300"> 
+
+                  <picture>
+                    <source  srcset="./images/freshcoffe.jpeg 1x,  ./images/freshcoffe-2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                  
+                    <source  srcset="./images/freshcoffe-tab.jpeg 1x,  ./images/freshcoffe-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)"
+                    >
+                  
+                    <source  srcset="./images/freshcoffe-mob.jpeg 1x,  ./images/freshcoffe-mob-2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    >   
+
+ 
+                      <img src="./images/freshcoffe.jpg" alt="Fresh Coffee" width="396" height="280"> 
+
+                    
+                  </picture>
                    <div class="overlay">
                     <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                   </div> 
@@ -273,5 +498,7 @@
        </div>
       
      </footer>
+
+     <script src="./js/menu.js"></script>
   </body>
 </html>
